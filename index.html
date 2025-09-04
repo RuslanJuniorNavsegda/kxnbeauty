@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KXN Beauty - Косметика</title>
+    <meta
+      name="description"
+      content="Качественная косметика для ухода за собой. Доставка по России."
+    />
+    <meta
+      property="og:title"
+      content="KXN Beauty — Косметика для вашей красоты"
+    />
+    <meta
+      property="og:description"
+      content="Подчеркните свою естественную красоту с нашей косметикой. Доставка по России."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=1600&auto=format&fit=crop"
+    />
+    <meta name="color-scheme" content="light only" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="nav-container">
+        <a href="#" class="logo">KXN Beauty</a>
+        <ul class="nav-menu">
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#products">Товары</a></li>
+          <li><a href="#features">Преимущества</a></li>
+          <li><a href="#brands">Бренды</a></li>
+          <li><a href="#testimonials">Отзывы</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <button class="mobile-menu-btn">☰</button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>KXN Beauty</h1>
+        <p>
+          Современная косметика, которая подчеркивает вашу естественную красоту
+        </p>
+        <a href="#products" class="btn" aria-label="Перейти к товарам"
+          >Товары</a
+        >
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="features-container">
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <img
+              src="https://images.weserv.nl/?url=images.unsplash.com/photo-1620912189866-9d09a47d0e79&auto=format&fit=crop&w=800&q=80"
+              alt="Качество ингредиентов"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              decoding="async"
+              class="feature-icon"
+            />
+            <h3>Премиальные ингредиенты</h3>
+            <p>
+              Подбираем составы, которые действительно работают и подходят коже.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img
+              src="https://images.weserv.nl/?url=images.unsplash.com/photo-1515378791036-0648a3ef77b2&auto=format&fit=crop&w=800&q=80"
+              alt="Быстрая доставка"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              decoding="async"
+              class="feature-icon"
+            />
+            <h3>Быстрая доставка</h3>
+            <p>
+              Отправляем по всей России. Аккуратная упаковка и контроль
+              качества.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img
+              src="https://images.weserv.nl/?url=images.unsplash.com/photo-1542744173-8e7e53415bb0&auto=format&fit=crop&w=800&q=80"
+              alt="Поддержка клиентов"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              decoding="async"
+              class="feature-icon"
+            />
+            <h3>Поддержка 7/7</h3>
+            <p>
+              Помогаем подобрать уход и отвечаем на вопросы в удобных каналах.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+      <h2 class="section-title">Наши товары</h2>
+
+      <!-- Simple Search -->
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Найти товар..." />
+      </div>
+
+      <!-- Filters -->
+      <div class="filters-container" aria-label="Фильтры товаров">
+        <button class="filter-pill active" data-category="all">Все</button>
+        <button class="filter-pill" data-category="skincare">
+          Уход за кожей
+        </button>
+        <button class="filter-pill" data-category="makeup">Декоративная</button>
+        <button class="filter-pill" data-category="haircare">
+          Уход за волосами
+        </button>
+        <button class="filter-pill" data-category="new">Новинки</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid">
+        <!-- Products will be loaded dynamically via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section id="brands" class="brands">
+      <div class="brands-container">
+        <h2 class="section-title">Наши бренды</h2>
+        <div class="brands-strip" aria-label="Популярные бренды">
+          <img
+            src="https://images.weserv.nl/?url=images.unsplash.com/photo-1541647376583-8934aaf3448b&auto=format&fit=crop&w=400&q=80"
+            alt="Бренд 1"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            decoding="async"
+          />
+          <img
+            src="https://images.weserv.nl/?url=images.unsplash.com/photo-1545235617-9465d2a55698&auto=format&fit=crop&w=400&q=80"
+            alt="Бренд 2"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            decoding="async"
+          />
+          <img
+            src="https://images.weserv.nl/?url=images.unsplash.com/photo-1535585209827-a15fcdbc4c2d&auto=format&fit=crop&w=400&q=80"
+            alt="Бренд 3"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            decoding="async"
+          />
+          <img
+            src="https://images.weserv.nl/?url=images.unsplash.com/photo-1594051100995-8136cf73b4a2&auto=format&fit=crop&w=400&q=80"
+            alt="Бренд 4"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            decoding="async"
+          />
+          <img
+            src="https://images.weserv.nl/?url=images.unsplash.com/photo-1585386959984-a41552231653&auto=format&fit=crop&w=400&q=80"
+            alt="Бренд 5"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            decoding="async"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="about-container">
+        <h2 class="section-title">О нас</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>О нас</h3>
+            <p>
+              Качественная косметика для ухода за собой. Помогаем вам выглядеть
+              прекрасно.
+            </p>
+            <p>Наш ассортимент:</p>
+            <ul>
+              <li>Уход за кожей</li>
+              <li>Декоративная косметика</li>
+              <li>Уход за волосами</li>
+            </ul>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://images.weserv.nl/?url=images.unsplash.com/photo-1596461404969-9ae70f2830c1&auto=format&fit=crop&w=1600&q=80"
+              alt="О нас"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              decoding="async"
+              onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1600\' height=\'900\'><rect fill=\'%23f0e6ff\' width=\'100%25\' height=\'100%25\'/><text x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%238c52ff\' font-family=\'Poppins,Segoe UI\' font-size=\'48\'>KXN Beauty</text></svg>'"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="testimonials-container">
+        <h2 class="section-title">Отзывы клиентов</h2>
+        <div class="testimonials-grid">
+          <!-- Testimonials will be injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+      <div class="faq-container">
+        <h2 class="section-title">Частые вопросы</h2>
+        <div class="faq-list">
+          <!-- FAQ items will be injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="newsletter-container">
+        <h2 class="section-title">Подпишитесь на новости</h2>
+        <p class="newsletter-subtitle">
+          Скидки, новинки и советы по уходу — 1-2 раза в неделю.
+        </p>
+        <form class="newsletter-form" novalidate>
+          <input
+            type="email"
+            class="newsletter-input"
+            placeholder="Ваш email"
+            aria-label="Email"
+            required
+          />
+          <button type="submit" class="btn">Подписаться</button>
+        </form>
+        <p class="newsletter-note">
+          Нажимая «Подписаться», вы соглашаетесь с политикой конфиденциальности.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="contact-container">
+        <h2 class="section-title">Контакты</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Контакты</h3>
+            <p><strong>Телефон:</strong> +7 (495) 123-45-67</p>
+            <p><strong>Email:</strong> info@kxnbeauty.ru</p>
+            <p><strong>Работаем:</strong> Пн-Пт 9:00-18:00</p>
+          </div>
+          <div class="contact-form">
+            <h3>Написать нам</h3>
+            <form>
+              <input type="text" placeholder="Имя" required />
+              <input type="email" placeholder="Email" required />
+              <textarea placeholder="Сообщение" rows="4" required></textarea>
+              <button type="submit" class="btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>KXN Beauty</h3>
+          <p>Косметика для вашей красоты</p>
+        </div>
+        <div class="footer-section">
+          <h3>Контакты</h3>
+          <p>Телефон: +7 (495) 123-45-67</p>
+          <p>Email: info@kxnbeauty.ru</p>
+        </div>
+      </div>
+      <div class="footer-bottom"></div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+      // Sticky position support detection
+      (function () {
+        var test = document.createElement("div");
+        test.style.position = "sticky";
+        if (!/sticky/i.test(test.style.position)) {
+          document.addEventListener("DOMContentLoaded", function () {
+            document.body.classList.add("no-sticky");
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
